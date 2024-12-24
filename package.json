@@ -43,7 +43,8 @@
     "coverage": "vitest run --coverage",
     "test-build": "vitest run",
     "test-ts": "yarn tsc --noEmit",
-    "lint": "cross-env eslint src/**"
+    "lint": "cross-env eslint src/**",
+    "prepare": "npm run build-dist && npm run build-types"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.2",
